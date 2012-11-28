@@ -1,6 +1,12 @@
 <h1><%= @country.name %></h1>
 
-<p>Best restaurants in <%= @location %>:</p>
+<p>
+  Best restaurants in <%= @location %>
+  <% unless current_user %>
+    (<%= link_to "sign in with Facebook", "/auth/facebook" %> to change your location.)
+  <% end %>
+</p>
+
 
 <ul>
   <% @results.each do |result| %>
