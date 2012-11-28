@@ -1,8 +1,8 @@
 # Be sure to restart your server when you modify this file.
 
-Foodies::Application.config.session_store :cookie_store, key: '_foodies_session'
+WorldFood::Application.config.session_store :cookie_store, key: '_WorldFood_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
 # (create the session table with "rails generate session_migration")
-# Foodies::Application.config.session_store :active_record_store
+# WorldFood::Application.config.session_store :active_record_store

@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Foodies::Application.load_tasks
+WorldFood::Application.load_tasks
