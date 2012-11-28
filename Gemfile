@@ -4,7 +4,6 @@ gem 'rails', '3.2.3'
 gem 'figleaf'
 gem 'jquery-rails'
 gem 'omniauth-facebook'
-gem 'sqlite3'
 gem 'yelpster'
 
 group :assets do
@@ -16,7 +15,12 @@ group :assets do
   gem 'uglifier'
 end
 
+group :production do
+  gem 'pg'
+end
+
 group :development do
-  gem 'thin'
   gem 'quiet_assets'
+  gem 'sqlite3'
+  gem 'thin'
 end
