@@ -1,0 +1,11 @@
+development:
+  app_id: chicka_chicka_yeah_fake_id_fake_id
+  secret: please_dont_tell
+
+test:
+  app_id: chicka_chicka_yeah_fake_id_fake_id
+  secret: please_dont_tell
+
+production:
+  app_id: chicka_chicka_yeah_fake_id_fake_id
+  secret: please_dont_tell
