@@ -1,6 +1,9 @@
 class Country < ActiveRecord::Base
   attr_accessible :name
 
+  has_many :country_users
+  has_many :checkins, :through => :country_users
+
   def yelp_results(city, country)
     client = Yelp::Client.new
 
@@ -14,5 +17,9 @@ class Country < ActiveRecord::Base
     )
 
     HashWithIndifferentAccess.new(client.search(request))
+  end
+
+  def checkin_for(user)
+    country_users.where(user_id: user.id).first_or_initialize
   end
 end

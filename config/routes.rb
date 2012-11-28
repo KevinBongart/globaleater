@@ -4,6 +4,7 @@ WorldFood::Application.routes.draw do
   match 'signout', to: 'sessions#destroy', as: 'signout'
 
   resources :countries
+  resources :country_users
 
   root :to => 'countries#index'
 end

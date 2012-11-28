@@ -11,6 +11,9 @@ class User < ActiveRecord::Base
   attr_accessible :provider
   attr_accessible :uid
 
+  has_many :country_users
+  has_many :checkins, :through => :country_users
+
   def self.from_omniauth(auth)
       where(auth.slice(:provider, :uid)).first_or_initialize.tap do |user|
         user.email = auth.info.email

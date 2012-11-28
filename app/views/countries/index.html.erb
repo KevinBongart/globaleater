@@ -1,5 +1,16 @@
 <ul>
   <% @countries.each do |country| %>
-    <li><%= link_to country.name, country %></li>
+    <li>
+      <% if current_user %>
+        <%= form_for country.checkin_for(current_user) do |f| %>
+          <fieldset>
+            <label class="checkbox">
+              <%= f.check_box :checked %>
+              <%= link_to country.name, country %>
+            </label>
+          </fieldset>
+        <% end %>
+      <% end %>
+    </li>
   <% end %>
 </ul>
