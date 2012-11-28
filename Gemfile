@@ -5,6 +5,7 @@ gem 'figleaf'
 gem 'jquery-rails'
 gem 'omniauth-facebook'
 gem 'sqlite3'
+gem 'yelpster'
 
 group :assets do
   gem 'coffee-rails'
@@ -13,4 +14,9 @@ group :assets do
   gem 'therubyracer'
   gem 'twitter-bootstrap-rails'
   gem 'uglifier'
+end
+
+group :development do
+  gem 'thin'
+  gem 'quiet_assets'
 end

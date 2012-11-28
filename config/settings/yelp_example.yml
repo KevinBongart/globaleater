@@ -1,0 +1,17 @@
+development:
+  consumer_key: your_consumer_key
+  consumer_secret: your_secret_key
+  token: your_token
+  token_secret: your_token_secret
+
+test:
+  consumer_key: your_consumer_key
+  consumer_secret: your_secret_key
+  token: your_token
+  token_secret: your_token_secret
+
+production:
+  consumer_key: your_consumer_key
+  consumer_secret: your_secret_key
+  token: your_token
+  token_secret: your_token_secret

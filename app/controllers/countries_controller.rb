@@ -14,6 +14,8 @@ class CountriesController < ApplicationController
   # GET /countries/1.json
   def show
     @country = Country.find(params[:id])
+    @location = current_user ? current_user.location : 'Paris'
+    @results = @country.yelp_results(@location, @country.name)[:businesses]
 
     respond_to do |format|
       format.html # show.html.erb
