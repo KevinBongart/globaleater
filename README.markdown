@@ -1,6 +1,6 @@
-# WorldFood
+# Global Eater
 
-WorldFood is your personnal to-eat list. It integrates with Facebook to authenticate users and with Yelp to find local restaurants.
+Global Eater is your personnal to-eat list. It integrates with Facebook to authenticate users and with Yelp to find local restaurants.
 
 I made this application with Rails one night I was hungry.
 
